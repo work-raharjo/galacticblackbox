@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Satellite, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import galacticLogo from "@/assets/galactic-logo-horizontal.webp";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,19 +17,13 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <Satellite className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg tracking-tight">
-                GALACTIC
-              </span>
-              <span className="text-[10px] text-muted-foreground -mt-1 tracking-wider">
-                BLACKBOX™
-              </span>
-            </div>
-          </div>
+          <a href="/" className="flex items-center">
+            <img 
+              src={galacticLogo} 
+              alt="Galactic BlackBox" 
+              className="h-8 lg:h-10 w-auto"
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
