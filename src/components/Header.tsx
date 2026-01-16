@@ -38,16 +38,6 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="heroOutline" size="sm">
-              Learn More
-            </Button>
-            <Button variant="hero" size="sm">
-              Get Started
-            </Button>
-          </div>
-
           {/* Mobile Menu Toggle */}
           <button
             className="md:hidden p-2 text-foreground"
@@ -75,14 +65,6 @@ const Header = () => {
               <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </a>
-              <div className="flex gap-3 pt-2">
-                <Button variant="heroOutline" size="sm" className="flex-1">
-                  Learn More
-                </Button>
-                <Button variant="hero" size="sm" className="flex-1">
-                  Get Started
-                </Button>
-              </div>
             </nav>
           </motion.div>
         )}
