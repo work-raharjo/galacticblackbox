@@ -9,22 +9,22 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-foreground text-background hover:bg-foreground/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/5",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Coral accent button
-        hero: "bg-primary text-primary-foreground font-medium hover:bg-primary/90",
-        // Ghost with subtle border
-        heroOutline: "border border-primary/30 text-foreground hover:border-primary hover:bg-primary/5",
+        // Galactic BlackBox hero button
+        hero: "bg-primary text-primary-foreground font-semibold shadow-[0_0_20px_hsl(185_80%_50%_/_0.3),0_0_40px_hsl(185_80%_50%_/_0.2)] hover:scale-105 hover:shadow-[0_0_30px_hsl(185_80%_50%_/_0.5)] active:scale-100",
+        // Ghost with glow border
+        heroOutline: "border border-primary/50 text-foreground hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_20px_hsl(185_80%_50%_/_0.2)]",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-4",
-        lg: "h-12 rounded-md px-8",
-        xl: "h-14 rounded-md px-10 text-base",
+        sm: "h-9 rounded-md px-3",
+        lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },
